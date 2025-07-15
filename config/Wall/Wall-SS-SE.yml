@@ -1,0 +1,28 @@
+# ------------------------------------------------------------------
+# Experiment-config file for:  None-SS-SE
+# ------------------------------------------------------------------
+exp_id      : "Wall-SS-SE"     # <- used as results/ subfolder name
+
+# --- random seeds -------------------------------------------------
+env_seed    : 42              # seed for environment RNG
+agent_seed  : 43              # seed for agent RNG
+numpy_seed  : 44              # seed for numpy RNG
+
+# --- start / goal -------------------------------------------------
+agent_start : [1, 5]             # (x, y)  ─ upper-left = (0,0)
+agent_goal  : [9, 5]
+
+# --- obstacle mask ------------------------------------------------
+# Empty list means "no obstacles" – baseline scenario P1.
+obstacles :
+  - [5, 1]   # central horizontal wall
+  - [5, 2]
+  - [5, 3]
+  - [5, 4]
+  - [5, 5]
+  - [5, 6]
+  - [5, 7]
+  - [5, 8]
+  - [5, 9]
+
+
